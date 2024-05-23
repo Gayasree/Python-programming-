@@ -1,0 +1,32 @@
+# Function to display the elements of the array
+def display_array(arr):
+    print("Elements of the array are:")
+    for element in arr:
+        print(element)
+
+# Function to store elements in an array
+def store_elements():
+    # Create an empty list to store elements
+    arr = []
+
+    # Get the number of elements from the user
+    num_elements = int(input("Enter the number of elements you want to store: "))
+
+    # Loop to get each element from the user
+    for i in range(num_elements):
+        element = input(f"Enter element {i + 1}: ")
+        arr.append(element)
+    
+    return arr
+
+# Main function to run the program
+def main():
+    # Store elements in the array
+    array = store_elements()
+    
+    # Display the elements of the array
+    display_array(array)
+
+# Run the main function
+if __name__ == "__main__":
+    main()
